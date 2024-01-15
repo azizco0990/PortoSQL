@@ -24,9 +24,9 @@ CREATE TABLE IF NOT EXISTS sales (
 -- Mengisi tabel Customer
 INSERT INTO customer (customer_id, customer_name, email, phone_number)
 VALUES
-    (1, 'John Doe', 'john.doe@email.com', '123-456-7890'),
-    (2, 'Jane Smith', 'jane.smith@email.com', '987-654-3210'),
-    (3, 'Bob Johnson', 'bob.johnson@email.com', '555-123-4567');
+    (1, 'Abdul', 'abdul@email.com', '123-456-7890'),
+    (2, 'Aziz', 'aziz@email.com', '987-654-3210'),
+    (3, 'Fathan', 'fathan@email.com', '555-123-4567');
 
 -- Mengisi tabel Sales
 INSERT INTO sales (sale_id, customer_id, sale_date, amount)
@@ -37,7 +37,7 @@ VALUES
     
 -- Mengupdate data pada tabel Customer
 UPDATE customer
-SET email = 'new.email@email.com'
+SET email = 'baru.email@email.com'
 WHERE customer_id = 1;
 
 -- Mengupdate data pada tabel Sales
@@ -60,7 +60,3 @@ ADD COLUMN address VARCHAR(255);
 -- Mengubah tipe data kolom pada tabel Sales
 ALTER TABLE sales
 MODIFY COLUMN amount DECIMAL(12, 2);
-
--- Melihat Semua isi Table
-Select * from customer;
-Select * from sales;umkm_jabarumkm_jabar
